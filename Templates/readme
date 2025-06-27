@@ -1,0 +1,25 @@
+fruit-freshness-classifier/
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── data/
+│   ├── raw/                    # Original dataset
+│   └── processed/              # Preprocessed or resized images
+│       └── val/                # Validation data (used in random_test)
+│
+├── models/
+│   └── healthy_vs_rotten.h5   # Trained model
+│
+├── labels/
+│   └── class_indices.json     # Label index mapping
+│
+├── notebooks/
+│   └── data_exploration.ipynb # (Optional) For data visualization, experiments
+│
+├── scripts/
+│   └── predict.py             # Your provided code
+│
+└── utils/
+    └── __init__.py
+    └── data_utils.py          # (Optional) reusable loading or preprocessing utils
